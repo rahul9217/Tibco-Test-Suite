@@ -1,0 +1,2522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a4978638-f875-4dfd-a55b-b5bd968b230f" activeEnvironment="Default" name="UT_TS_Tibco_NumberInventory.ear" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="UT_TS_Tibco_NumberInventory_TestSuite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\SoapUI-5.3.0\bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="true"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="true"/>
+  <con:entry key="Enable UI" value="true"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="C:\Users\wiprorkushwaha\Desktop\Test Suite\Report\25 October"/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="14bee28d-79d8-4508-874f-d86b891b2a6a" wsaVersion="NONE" name="HTTPBinding" type="wsdl" bindingName="{http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices}HTTPBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/wiprorkushwaha/Desktop/Agıle/TİBCO%20UPGRADE/5.11%20to%205.13/WSDL/wsdls/wsdls/InventoryManagement/NumberInventoryServices%20(NumberInventory%20ear).wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\wiprorkushwaha\Desktop\Agıle\TİBCO%20UPGRADE\5.11%20to%205.13\WSDL\wsdls\wsdls\InventoryManagement\NumberInventoryServices%20(NumberInventory%20ear).wsdl"><con:part><con:url>file:\C:\Users\wiprorkushwaha\Desktop\Agıle\TİBCO%20UPGRADE\5.11%20to%205.13\WSDL\wsdls\wsdls\InventoryManagement\NumberInventoryServices%20(NumberInventory%20ear).wsdl</con:url><con:content><![CDATA[<!--Created by TIBCO WSDL-->
+<wsdl:definitions name="Untitled" targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns21="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetCustomerReservedMSISDN/v1" xmlns:ns20="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetSIMCardSettings/v1" xmlns:ns16="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDNLock/v1" xmlns:ns17="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ChangeSIMCard/v1" xmlns:ns14="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/CoupleSIMCard/v1" xmlns:ns15="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ChangeMSISDN/v1" xmlns:ns18="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDN/v1" xmlns:ns19="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityInquiries/GetMSISDNListPendingMNPValidation/v1" xmlns:ns9="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/UpdateMSISDNListPendingMNPValidation/v1" xmlns:ns5="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetSIMCardList/v1" xmlns:ns12="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ReserveMSISDN/v1" xmlns:ns6="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/ReleaseMSISDNListPendingMNPValidation/v1" xmlns:ns13="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetICCIDDetails/v1" xmlns:ns7="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ReleaseMSISDN/v1" xmlns:ns10="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/DecoupleSIMCard/v1" xmlns:ns8="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetMSISDNList/v1" xmlns:ns11="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageSIMCardLock/v1" xmlns:ns2="http://vodafone.com.tr/EAI/Common/ResponseCodes" xmlns:ns1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/CancelMSISDNReservation/v1" xmlns:ns4="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ActivateMSISDN/v1" xmlns:ns3="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageSIMCardCouple/v1" xmlns:tns="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:ns0="http://vodafone.com.tr/EAI/Common/Header" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageSIMCardCouple/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageSIMCardCouple/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ManageSIMCardCoupleRequest">
+        <xs:sequence>
+          <xs:element ref="ns3:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="ICCIDPrimary" type="xs:string"/>
+          <xs:element name="ICCIDSecondary" type="xs:string"/>
+          <xs:element name="ICCID" type="xs:string"/>
+          <xs:element name="MSISDNPrimary" type="xs:string"/>
+          <xs:element name="MSISDNSecondary" type="xs:string"/>
+          <xs:element name="LineUserName" type="xs:string"/>
+          <xs:element name="UserId" type="xs:string"/>
+          <xs:element name="Operation" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns3:Request"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetCustomerReservedMSISDN/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetCustomerReservedMSISDN/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="GetCustomerReservedMSISDNRequest">
+        <xs:sequence>
+          <xs:element ref="ns21:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetCustomerReservedMSISDNResponse">
+        <xs:sequence>
+          <xs:element ref="ns21:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="DocumentType" type="xs:string" minOccurs="0"/>
+          <xs:element name="DocumentId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:element name="RecordCount" type="xs:string" minOccurs="0"/>
+          <xs:element name="ListOfMSISDN" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MSISDN" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="GSMNumber" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReservedShopCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReserveCancelShopCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReservationType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="StockType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="Status" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReservedDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="ActivationDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="UpdatedBy" type="xs:string" minOccurs="0"/>
+                      <xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="ReserveCancelBy" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CrUser" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReserveCancelDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="CrDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="ActivatedBy" type="xs:string" minOccurs="0"/>
+                      <xs:element name="UpdateSeq" type="xs:decimal" minOccurs="0"/>
+                      <xs:element name="ReservedBy" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReservedCount" type="xs:string" minOccurs="0"/>
+                      <xs:element name="NumberType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="TransferType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="TransferStatus" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CancelDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="LockType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="MNPReceivedDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="DocumentType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="DocumentId" type="xs:string" minOccurs="0"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns21:Request"/>
+      <xs:element name="Response" type="ns21:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetICCIDDetails/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetICCIDDetails/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="GetICCIDDetailsRequest">
+        <xs:sequence>
+          <xs:element ref="ns13:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetICCIDDetailsResponse">
+        <xs:sequence>
+          <xs:element ref="ns13:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="ICCID" type="xs:string"/>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="UserName" type="xs:string"/>
+          <xs:element name="ShopCode" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="MSISDNSecondary" type="xs:string"/>
+          <xs:element name="CardType" type="xs:string"/>
+          <xs:element name="Brand" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:element name="PIN" type="xs:string"/>
+          <xs:element name="PIN2" type="xs:string"/>
+          <xs:element name="PUK" type="xs:string"/>
+          <xs:element name="PUK2" type="xs:string"/>
+          <xs:element name="SIMCardType" type="xs:string"/>
+          <xs:element name="IMSI" type="xs:string"/>
+          <xs:element name="SIMCardProfile" type="xs:string"/>
+          <xs:element name="Algorithm" type="xs:string"/>
+          <xs:element name="Key" type="xs:string"/>
+          <xs:element name="DLKey1" type="xs:string" minOccurs="0"/>
+          <xs:element name="DLKey2" type="xs:string" minOccurs="0"/>
+          <xs:element name="OTAStatus" type="xs:string" minOccurs="0"/>
+          <xs:element name="IMSISecondary" type="xs:string" minOccurs="0"/>
+          <xs:element name="KeySecundary" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns13:Request"/>
+      <xs:element name="Response" type="ns13:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ActivateMSISDN/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ActivateMSISDN/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ActivateMSISDNRequest">
+        <xs:sequence>
+          <xs:element ref="ns4:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="ICCID" type="xs:string"/>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="UserId" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns4:Request"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageSIMCardLock/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageSIMCardLock/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ManageSIMCardLockRequest">
+        <xs:sequence>
+          <xs:element ref="ns11:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="ICCID" type="xs:string"/>
+          <xs:element name="UserName" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="LockType" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns11:Request"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ChangeMSISDN/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ChangeMSISDN/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ChangeMSISDNRequest">
+        <xs:sequence>
+          <xs:element ref="ns15:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="OldMSISDN" type="xs:string"/>
+          <xs:element name="NewMSISDN" type="xs:string"/>
+          <xs:element name="UserId" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns15:Request"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/EAI/Common/Header" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/EAI/Common/Header" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="Attribute">
+        <xs:sequence>
+          <xs:element name="Name" type="xs:string"/>
+          <xs:element name="Value" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BusinessInterface">
+        <xs:sequence>
+          <xs:choice minOccurs="0">
+            <xs:element name="Domain" type="xs:string"/>
+            <xs:element name="Service" type="xs:string"/>
+          </xs:choice>
+          <xs:element name="Operation" type="xs:string" minOccurs="0"/>
+          <xs:element name="Version" type="xs:integer" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Credentials">
+        <xs:sequence>
+          <xs:element name="ApplicationId" type="xs:string"/>
+          <xs:element name="User" type="xs:string"/>
+          <xs:element name="Password" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Flow">
+        <xs:sequence>
+          <xs:element name="Owner" type="xs:string" minOccurs="0"/>
+          <xs:element name="OwnerId" type="xs:string" minOccurs="0"/>
+          <xs:element name="ProcessId" type="xs:string" minOccurs="0"/>
+          <xs:element name="BusinessInterface" type="ns0:BusinessInterface" minOccurs="0"/>
+          <xs:element name="TechnicalInterface" type="ns0:TechnicalInterface" minOccurs="0"/>
+          <xs:element name="Timestamp" type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Header">
+        <xs:sequence>
+          <xs:element name="RequestId" type="xs:string" minOccurs="0"/>
+          <xs:element name="SourceSystem" type="xs:string"/>
+          <xs:element name="ReplyExpected">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="No"/>
+                <xs:enumeration value="Now"/>
+                <xs:enumeration value="Later"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="QoS" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="G"/>
+                <xs:enumeration value="R"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="Schedule" type="xs:dateTime" minOccurs="0"/>
+          <xs:element name="CorrelationId" type="xs:string" minOccurs="0"/>
+          <xs:element name="Priority" type="xs:integer" minOccurs="0"/>
+          <xs:element name="Credentials" type="ns0:Credentials" maxOccurs="unbounded"/>
+          <xs:element name="ProxySystem" type="xs:string" minOccurs="0"/>
+          <xs:element name="ForceSimulate" type="xs:boolean" minOccurs="0"/>
+          <xs:element name="Attributes" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Attribute" type="ns0:Attribute" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="HeaderExtended">
+        <xs:complexContent>
+          <xs:extension base="ns0:Header">
+            <xs:sequence>
+              <xs:element name="BusinessInterface" type="ns0:BusinessInterface" minOccurs="0"/>
+              <xs:element name="TechnicalInterface" type="ns0:TechnicalInterface" minOccurs="0"/>
+              <xs:element name="TargetSystem" type="xs:string" minOccurs="0"/>
+              <xs:element name="CreationTimestamp" type="xs:dateTime" minOccurs="0"/>
+              <xs:element name="TimeOut" type="xs:string" minOccurs="0"/>
+              <xs:element name="Tries" type="xs:string" minOccurs="0"/>
+              <xs:element name="MaxTries" type="xs:integer" minOccurs="0"/>
+              <xs:element name="Repub" type="xs:boolean" minOccurs="0"/>
+              <xs:element name="RepubTime" type="xs:string" minOccurs="0"/>
+              <xs:element name="History" type="ns0:History" minOccurs="0"/>
+              <xs:element name="Transport" type="ns0:Transport" minOccurs="0"/>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="History">
+        <xs:sequence>
+          <xs:element name="Flow" type="ns0:Flow" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="Step" type="xs:long" minOccurs="0"/>
+          <xs:element name="NumSteps" type="xs:long" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TechnicalInterface">
+        <xs:sequence>
+          <xs:element name="Domain" type="xs:string" minOccurs="0"/>
+          <xs:element name="Interface" type="xs:string" minOccurs="0"/>
+          <xs:element name="Version" type="xs:integer" minOccurs="0"/>
+          <xs:element name="MethodCall" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Transport">
+        <xs:sequence>
+          <xs:element name="ReplyTo" type="xs:string" minOccurs="0"/>
+          <xs:element name="Destination" type="xs:string" minOccurs="0"/>
+          <xs:element name="MessageId" type="xs:string" minOccurs="0"/>
+          <xs:element name="SOAPAction" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Header" type="ns0:Header"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityInquiries/GetMSISDNListPendingMNPValidation/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityInquiries/GetMSISDNListPendingMNPValidation/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="GetMSISDNListPendingMNPValidationRequest">
+        <xs:sequence>
+          <xs:element ref="ns19:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetMSISDNListPendingMNPValidationResponse">
+        <xs:sequence>
+          <xs:element ref="ns19:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="Status" type="xs:string"/>
+          <xs:element name="PageStart" type="xs:int"/>
+          <xs:element name="PageSize" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:element name="TotalMSISDNs" type="xs:int" minOccurs="0"/>
+          <xs:element name="RecordCount" type="xs:int" minOccurs="0"/>
+          <xs:element name="ListOfMSISDN" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MSISDN" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="MSISDN" type="xs:string" minOccurs="0"/>
+                      <xs:element name="Status" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ErrorDescription" type="xs:string" minOccurs="0"/>
+                      <xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="CrDate" type="xs:dateTime" minOccurs="0"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns19:Request"/>
+      <xs:element name="Response" type="ns19:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDN/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDN/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ManageMSISDNRequest">
+        <xs:sequence>
+          <xs:element ref="ns18:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="OldMSISDN" type="xs:string" minOccurs="0"/>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="ICCID" type="xs:string" minOccurs="0"/>
+          <xs:element name="IMSI" type="xs:string" minOccurs="0"/>
+          <xs:element name="UserId" type="xs:string"/>
+          <xs:element name="Reason" type="xs:string" minOccurs="0"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="Operation" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string"/>
+          <xs:element name="DocumentType" type="xs:string" minOccurs="0"/>
+          <xs:element name="DocumentId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns18:Request"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/DecoupleSIMCard/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/DecoupleSIMCard/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="DecoupleSIMCardRequest">
+        <xs:sequence>
+          <xs:element ref="ns10:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="ICCIDPrimary" type="xs:string"/>
+          <xs:element name="ICCIDSecondary" type="xs:string"/>
+          <xs:element name="ICCID" type="xs:string"/>
+          <xs:element name="MSISDNPrimary" type="xs:string"/>
+          <xs:element name="MSISDNSecondary" type="xs:string"/>
+          <xs:element name="UserId" type="xs:string"/>
+          <xs:element name="Operation" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns10:Request"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/CoupleSIMCard/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/CoupleSIMCard/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="CoupleSIMCardRequest">
+        <xs:sequence>
+          <xs:element ref="ns14:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="ICCIDPrimary" type="xs:string"/>
+          <xs:element name="ICCIDSecondary" type="xs:string"/>
+          <xs:element name="ICCID" type="xs:string"/>
+          <xs:element name="MSISDNPrimary" type="xs:string"/>
+          <xs:element name="MSISDNSecondary" type="xs:string"/>
+          <xs:element name="LineUserName" type="xs:string"/>
+          <xs:element name="UserId" type="xs:string"/>
+          <xs:element name="Operation" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns14:Request"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetSIMCardSettings/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetSIMCardSettings/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="GetSIMCardSettingsRequest">
+        <xs:sequence>
+          <xs:element ref="ns20:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetSIMCardSettingsResponse">
+        <xs:sequence>
+          <xs:element ref="ns20:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="IMSI" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:element name="S_4_5GCompatible" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns20:Request"/>
+      <xs:element name="Response" type="ns20:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/UpdateMSISDNListPendingMNPValidation/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/UpdateMSISDNListPendingMNPValidation/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="Status" type="xs:string"/>
+          <xs:element name="ErrorDescription" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response"/>
+      <xs:complexType name="UpdateMSISDNListPendingMNPValidationRequest">
+        <xs:sequence>
+          <xs:element ref="ns9:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UpdateMSISDNListPendingMNPValidationResponse">
+        <xs:sequence>
+          <xs:element ref="ns9:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns9:Request"/>
+      <xs:element name="Response" type="ns9:Response"/>
+    </xs:schema>
+    <xsd:schema targetNamespace="http://vodafone.com.tr/EAI/Common/ResponseCodes" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/EAI/Common/ResponseCodes" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:complexType name="Attribute">
+        <xsd:sequence>
+          <xsd:element name="Name" type="xsd:string"/>
+          <xsd:element name="Value" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ResponseCodes">
+        <xsd:sequence>
+          <xsd:element name="ResponseCode" type="xsd:string"/>
+          <xsd:element name="ResponseMsg" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="ErrorCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="ErrorDescription" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ResponseHeader">
+        <xsd:complexContent>
+          <xsd:extension base="ns2:ResponseCodes">
+            <xsd:sequence>
+              <xsd:element name="RequestId" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Domain" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Service" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Operation" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Version" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="Attributes" minOccurs="0">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Attribute" type="ns2:Attribute" minOccurs="0" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ResponseHeader" type="ns2:ResponseHeader"/>
+    </xsd:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ReserveMSISDN/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ReserveMSISDN/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="ShopCode" type="xs:string"/>
+          <xs:element name="Username" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ReserveMSISDNRequest">
+        <xs:sequence>
+          <xs:element ref="ns12:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ReserveMSISDNResponse">
+        <xs:sequence>
+          <xs:element ref="ns12:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:any processContents="lax" namespace="##any"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns12:Request"/>
+      <xs:element name="Response" type="ns12:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ReleaseMSISDN/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ReleaseMSISDN/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ReleaseMSISDNRequest">
+        <xs:sequence>
+          <xs:element ref="ns7:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="IMSI" type="xs:string"/>
+          <xs:element name="Reason" type="xs:string"/>
+          <xs:element name="UserID" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string"/>
+          <xs:element name="DocumentType" type="xs:string" minOccurs="0"/>
+          <xs:element name="DocumentId" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns7:Request"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/CancelMSISDNReservation/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/CancelMSISDNReservation/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="CancelMSISDNReservationRequest">
+        <xs:sequence>
+          <xs:element ref="ns1:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CancelMSISDNReservationResponse">
+        <xs:sequence>
+          <xs:element ref="ns1:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="ShopCode" type="xs:string"/>
+          <xs:element name="Username" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:any processContents="lax" namespace="##any"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns1:Request"/>
+      <xs:element name="Response" type="ns1:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetMSISDNList/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetMSISDNList/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="GetMSISDNListRequest">
+        <xs:sequence>
+          <xs:element ref="ns8:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetMSISDNListResponse">
+        <xs:sequence>
+          <xs:element ref="ns8:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="StockType" type="xs:string"/>
+          <xs:element name="ShopCode" type="xs:string"/>
+          <xs:element name="ReservationStatus" type="xs:string"/>
+          <xs:element name="PageStart" type="xs:int"/>
+          <xs:element name="PageRecordCount" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:element name="RecordCount" type="xs:int"/>
+          <xs:element name="ListOfMSISDN">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MSISDN" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="GSMNumber" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReservedShopCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReserveCancelShopCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReservationType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="StockType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="Status" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReservedDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="ActivationDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="UpdatedBy" type="xs:string" minOccurs="0"/>
+                      <xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="ReserveCancelBy" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CrUser" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReserveCancelDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="CrDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="ActivatedBy" type="xs:string" minOccurs="0"/>
+                      <xs:element name="UpdateSeq" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReservedBy" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ReservedCount" type="xs:string" minOccurs="0"/>
+                      <xs:element name="NumberType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="TransferType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="TransferStatus" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CancelDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="LockType" type="xs:string" minOccurs="0"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns8:Request"/>
+      <xs:element name="Response" type="ns8:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/ReleaseMSISDNListPendingMNPValidation/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/ReleaseMSISDNListPendingMNPValidation/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ReleaseMSISDNListPendingMNPValidationRequest">
+        <xs:sequence>
+          <xs:element ref="ns6:Request" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ReleaseMSISDNListPendingMNPValidationResponse">
+        <xs:sequence>
+          <xs:element ref="ns6:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request"/>
+      <xs:complexType name="Response"/>
+      <xs:element name="Request" type="ns6:Request"/>
+      <xs:element name="Response" type="ns6:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetSIMCardList/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetSIMCardList/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="GetSIMCardListRequest">
+        <xs:sequence>
+          <xs:element ref="ns5:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetSIMCardListResponse">
+        <xs:sequence>
+          <xs:element ref="ns5:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="IMSIList" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IMSI" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ICCIDList" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ICCID" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="MSISDNList" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MSISDN" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PageStart" type="xs:int"/>
+          <xs:element name="PageRecordCount" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:element name="ListOfSIMCards">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="SIMCard" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ICCI" type="xs:string" minOccurs="0"/>
+                      <xs:element name="IMSI" type="xs:string" minOccurs="0"/>
+                      <xs:element name="Prefix" type="xs:string" minOccurs="0"/>
+                      <xs:element name="Brand" type="xs:string" minOccurs="0"/>
+                      <xs:element name="IMSIStatus" type="xs:string" minOccurs="0"/>
+                      <xs:element name="MSISDN" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ICCIStatus" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CardType" type="xs:string" minOccurs="0"/>
+                      <xs:element name="AUCAlgorithm" type="xs:string" minOccurs="0"/>
+                      <xs:element name="UsagePurpose" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CardLocked" type="xs:string" minOccurs="0"/>
+                      <xs:element name="PIN1" type="xs:string" minOccurs="0"/>
+                      <xs:element name="PUK1" type="xs:string" minOccurs="0"/>
+                      <xs:element name="PIN2" type="xs:string" minOccurs="0"/>
+                      <xs:element name="PUK2" type="xs:string" minOccurs="0"/>
+                      <xs:element name="WarehouseExitDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="ExitShop" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ExitShopCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CardOwner" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CardOwnerCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ShopEntryDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="ActivationDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="ActivatedByShop" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ActivatedByShopCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CancellationDate" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="CancelledByShop" type="xs:string" minOccurs="0"/>
+                      <xs:element name="TextCampaignCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="CancelledByShopCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="Campaign" type="xs:string" minOccurs="0"/>
+                      <xs:element name="PreviousCampaignCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="Firm" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ADMKey1" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ADMKey2" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ApprovedByShopCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ApprovedByShop" type="xs:string" minOccurs="0"/>
+                      <xs:element name="Capacity" type="xs:int" minOccurs="0"/>
+                      <xs:element name="Credit" type="xs:string" minOccurs="0"/>
+                      <xs:element name="OldCard" type="xs:string" minOccurs="0"/>
+                      <xs:element name="NewCard" type="xs:string" minOccurs="0"/>
+                      <xs:element name="DateOfSIMCardChange" type="xs:dateTime" minOccurs="0"/>
+                      <xs:element name="CompanyCode" type="xs:string" minOccurs="0"/>
+                      <xs:element name="MNPReject" type="xs:string" minOccurs="0"/>
+                      <xs:element name="ProfileNoAndType" type="xs:string" minOccurs="0"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns5:Request"/>
+      <xs:element name="Response" type="ns5:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDNLock/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDNLock/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ManageMSISDNLockRequest">
+        <xs:sequence>
+          <xs:element ref="ns16:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ManageMSISDNLockResponse">
+        <xs:sequence>
+          <xs:element ref="ns16:Response" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="UserId" type="xs:string"/>
+          <xs:element name="LockType" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:element name="ICCID" type="xs:string" minOccurs="0"/>
+          <xs:element name="DonorOperator" type="xs:string" minOccurs="0"/>
+          <xs:element name="ICCIDSecondary" type="xs:string" minOccurs="0"/>
+          <xs:element name="SIMCardType" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns16:Request"/>
+      <xs:element name="Response" type="ns16:Response"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ChangeSIMCard/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ChangeSIMCard/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ChangeSIMCardRequest">
+        <xs:sequence>
+          <xs:element ref="ns17:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="OldICCID" type="xs:string"/>
+          <xs:element name="NewICCID" type="xs:string"/>
+          <xs:element name="MSISDN" type="xs:string"/>
+          <xs:element name="UserId" type="xs:string"/>
+          <xs:element name="ProcessType" type="xs:string"/>
+          <xs:element name="IntegrationID" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Request" type="ns17:Request"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:service name="NumberInventoryServices">
+    <wsdl:port name="HTTP" binding="tns:HTTPBinding">
+      <soap:address location="http://localhost:10097/ServiceCatalog/NumberInventoryServices"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:portType name="NumberInventoryServicesPortType">
+    <wsdl:operation name="CancelMSISDNReservation_v1">
+      <wsdl:input message="tns:CancelMSISDNReservationRequest_v1"/>
+      <wsdl:output message="tns:CancelMSISDNReservationResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ManageSIMCardCouple_v1">
+      <wsdl:input message="tns:ManageSIMCardCoupleRequest_v1"/>
+      <wsdl:output message="tns:ManageSIMCardCoupleResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateMSISDN_v1">
+      <wsdl:input message="tns:ActivateMSISDNRequest_v1"/>
+      <wsdl:output message="tns:ActivateMSISDNResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSIMCardList_v1">
+      <wsdl:input message="tns:GetSIMCardListRequest_v1"/>
+      <wsdl:output message="tns:GetSIMCardListResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseMSISDNListPendingMNPValidation_v1">
+      <wsdl:input message="tns:ReleaseMSISDNListPendingMNPValidationRequest_v1"/>
+      <wsdl:output message="tns:ReleaseMSISDNListPendingMNPValidationResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseMSISDN_v1">
+      <wsdl:input message="tns:ReleaseMSISDNRequest_v1"/>
+      <wsdl:output message="tns:ReleaseMSISDNResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMSISDNList_v1">
+      <wsdl:input message="tns:GetMSISDNListRequest_v1"/>
+      <wsdl:output message="tns:GetMSISDNListResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMSISDNListPendingMNPValidation_v1">
+      <wsdl:input message="tns:UpdateMSISDNListPendingMNPValidationRequest_v1"/>
+      <wsdl:output message="tns:UpdateMSISDNListPendingMNPValidationResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="DecoupleSIMCard_v1">
+      <wsdl:input message="tns:DecoupleSIMCardRequest_v1"/>
+      <wsdl:output message="tns:DecoupleSIMCardResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ManageSIMCardLock_v1">
+      <wsdl:input message="tns:ManageSIMCardLockRequest_v1"/>
+      <wsdl:output message="tns:ManageSIMCardLockResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ReserveMSISDN_v1">
+      <wsdl:input message="tns:ReserveMSISDNRequest_v1"/>
+      <wsdl:output message="tns:ReserveMSISDNResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetICCIDDetails_v1">
+      <wsdl:input message="tns:GetICCIDDetailsRequest_v1"/>
+      <wsdl:output message="tns:GetICCIDDetailsResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="CoupleSIMCard_v1">
+      <wsdl:input message="tns:CoupleSIMCardRequest_v1"/>
+      <wsdl:output message="tns:CoupleSIMCardResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeMSISDN_v1">
+      <wsdl:input message="tns:ChangeMSISDNRequest_v1"/>
+      <wsdl:output message="tns:ChangeMSISDNResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ManageMSISDNLock_v1">
+      <wsdl:input message="tns:ManageMSISDNLockRequest_v1"/>
+      <wsdl:output message="tns:ManageMSISDNLockResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSIMCard_v1">
+      <wsdl:input message="tns:ChangeSIMCardRequest_v1"/>
+      <wsdl:output message="tns:ChangeSIMCardResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="ManageMSISDN_v1">
+      <wsdl:input message="tns:ManageMSISDNRequest_v1"/>
+      <wsdl:output message="tns:ManageMSISDNResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMSISDNListPendingMNPValidation_v1">
+      <wsdl:input message="tns:GetMSISDNListPendingMNPValidationRequest_v1"/>
+      <wsdl:output message="tns:GetMSISDNListPendingMNPValidationResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSIMCardSettings_v1">
+      <wsdl:input message="tns:GetSIMCardSettingsRequest_v1"/>
+      <wsdl:output message="tns:GetSIMCardSettingsResponse_v1"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerReservedMSISDN_v1">
+      <wsdl:input message="tns:GetCustomerReservedMSISDNRequest_v1"/>
+      <wsdl:output message="tns:GetCustomerReservedMSISDNResponse_v1"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HTTPBinding" type="tns:NumberInventoryServicesPortType">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CancelMSISDNReservation_v1">
+      <soap:operation style="rpc" soapAction="CancelMSISDNReservation_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManageSIMCardCouple_v1">
+      <soap:operation style="rpc" soapAction="ManageSIMCardCouple_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateMSISDN_v1">
+      <soap:operation style="rpc" soapAction="ActivateMSISDN_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSIMCardList_v1">
+      <soap:operation style="rpc" soapAction="GetSIMCardList_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseMSISDNListPendingMNPValidation_v1">
+      <soap:operation style="rpc" soapAction="ReleaseMSISDNListPendingMNPValidation_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseMSISDN_v1">
+      <soap:operation style="rpc" soapAction="ReleaseMSISDN_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMSISDNList_v1">
+      <soap:operation style="rpc" soapAction="GetMSISDNList_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMSISDNListPendingMNPValidation_v1">
+      <soap:operation style="rpc" soapAction="UpdateMSISDNListPendingMNPValidation_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecoupleSIMCard_v1">
+      <soap:operation style="rpc" soapAction="DecoupleSIMCard_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManageSIMCardLock_v1">
+      <soap:operation style="rpc" soapAction="ManageSIMCardLock_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReserveMSISDN_v1">
+      <soap:operation style="rpc" soapAction="ReserveMSISDN_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetICCIDDetails_v1">
+      <soap:operation style="rpc" soapAction="GetICCIDDetails_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CoupleSIMCard_v1">
+      <soap:operation style="rpc" soapAction="CoupleSIMCard_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeMSISDN_v1">
+      <soap:operation style="rpc" soapAction="ChangeMSISDN_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManageMSISDNLock_v1">
+      <soap:operation style="rpc" soapAction="ManageMSISDNLock_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSIMCard_v1">
+      <soap:operation style="rpc" soapAction="ChangeSIMCard_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManageMSISDN_v1">
+      <soap:operation style="rpc" soapAction="ManageMSISDN_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMSISDNListPendingMNPValidation_v1">
+      <soap:operation style="rpc" soapAction="GetMSISDNListPendingMNPValidation_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSIMCardSettings_v1">
+      <soap:operation style="rpc" soapAction="/Domains/ServiceCatalog/BusinessResources/Processes/Starters/NumberInventoryServices.serviceagent//GetSIMCardSettings_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerReservedMSISDN_v1">
+      <soap:operation style="rpc" soapAction="GetCustomerReservedMSISDN_v1"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Header Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:message name="CancelMSISDNReservationRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns1:CancelMSISDNReservationRequest"/>
+  </wsdl:message>
+  <wsdl:message name="CancelMSISDNReservationResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns1:CancelMSISDNReservationResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ManageSIMCardCoupleRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns3:ManageSIMCardCoupleRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ManageSIMCardCoupleResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+  </wsdl:message>
+  <wsdl:message name="ActivateMSISDNRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns4:ActivateMSISDNRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ActivateMSISDNResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+  </wsdl:message>
+  <wsdl:message name="GetSIMCardListRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns5:GetSIMCardListRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetSIMCardListResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns5:GetSIMCardListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ReleaseMSISDNListPendingMNPValidationRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns6:ReleaseMSISDNListPendingMNPValidationRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ReleaseMSISDNListPendingMNPValidationResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns6:ReleaseMSISDNListPendingMNPValidationResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ReleaseMSISDNRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns7:ReleaseMSISDNRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ReleaseMSISDNResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+  </wsdl:message>
+  <wsdl:message name="GetMSISDNListRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns8:GetMSISDNListRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetMSISDNListResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns8:GetMSISDNListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateMSISDNListPendingMNPValidationRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns9:UpdateMSISDNListPendingMNPValidationRequest"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateMSISDNListPendingMNPValidationResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns9:UpdateMSISDNListPendingMNPValidationResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DecoupleSIMCardRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns10:DecoupleSIMCardRequest"/>
+  </wsdl:message>
+  <wsdl:message name="DecoupleSIMCardResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+  </wsdl:message>
+  <wsdl:message name="ManageSIMCardLockRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns11:ManageSIMCardLockRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ManageSIMCardLockResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+  </wsdl:message>
+  <wsdl:message name="ReserveMSISDNRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns12:ReserveMSISDNRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ReserveMSISDNResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns12:ReserveMSISDNResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetICCIDDetailsRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns13:GetICCIDDetailsRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetICCIDDetailsResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns13:GetICCIDDetailsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="CoupleSIMCardRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns14:CoupleSIMCardRequest"/>
+  </wsdl:message>
+  <wsdl:message name="CoupleSIMCardResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeMSISDNRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns15:ChangeMSISDNRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeMSISDNResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+  </wsdl:message>
+  <wsdl:message name="ManageMSISDNLockRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns16:ManageMSISDNLockRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ManageMSISDNLockResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns16:ManageMSISDNLockResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeSIMCardRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns17:ChangeSIMCardRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeSIMCardResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+  </wsdl:message>
+  <wsdl:message name="ManageMSISDNRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns18:ManageMSISDNRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ManageMSISDNResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+  </wsdl:message>
+  <wsdl:message name="GetMSISDNListPendingMNPValidationRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns19:GetMSISDNListPendingMNPValidationRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetMSISDNListPendingMNPValidationResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns19:GetMSISDNListPendingMNPValidationResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSIMCardSettingsRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns20:GetSIMCardSettingsRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetSIMCardSettingsResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns20:GetSIMCardSettingsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCustomerReservedMSISDNRequest_v1">
+    <wsdl:part name="Header" type="ns0:Header"/>
+    <wsdl:part name="Body" type="ns21:GetCustomerReservedMSISDNRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetCustomerReservedMSISDNResponse_v1">
+    <wsdl:part name="Header" type="ns2:ResponseHeader"/>
+    <wsdl:part name="Body" type="ns21:GetCustomerReservedMSISDNResponse"/>
+  </wsdl:message>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint></con:endpoints><con:operation id="248934c9-d126-427d-aced-e2f446a5dd88" isOneWay="false" action="ActivateMSISDN_v1" name="ActivateMSISDN_v1" bindingOperationName="ActivateMSISDN_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fb48f880-6568-422e-8d89-690d75f4a89c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ActivateMSISDN/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ActivateMSISDN_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:ICCID>?</v1:ICCID>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <v1:UserId>?</v1:UserId>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:ActivateMSISDN_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ActivateMSISDN_v1"/></con:call></con:operation><con:operation id="c3f9e584-7090-4d00-8be7-feed172c796d" isOneWay="false" action="CancelMSISDNReservation_v1" name="CancelMSISDNReservation_v1" bindingOperationName="CancelMSISDNReservation_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="538203f7-90eb-45ce-9edd-ea663941edae" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/CancelMSISDNReservation/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:CancelMSISDNReservation_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <v1:ShopCode>?</v1:ShopCode>\r
+               <v1:Username>?</v1:Username>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:CancelMSISDNReservation_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="CancelMSISDNReservation_v1"/></con:call></con:operation><con:operation id="26c22c12-06d9-4dd8-ae37-9636919bcb0e" isOneWay="false" action="ChangeMSISDN_v1" name="ChangeMSISDN_v1" bindingOperationName="ChangeMSISDN_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1684c351-5190-4a2e-920e-caf4784e0795" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ChangeMSISDN/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ChangeMSISDN_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:OldMSISDN>?</v1:OldMSISDN>\r
+               <v1:NewMSISDN>?</v1:NewMSISDN>\r
+               <v1:UserId>?</v1:UserId>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:ChangeMSISDN_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ChangeMSISDN_v1"/></con:call></con:operation><con:operation id="7acb68be-0d7a-4d87-9ea2-c667446c479e" isOneWay="false" action="ChangeSIMCard_v1" name="ChangeSIMCard_v1" bindingOperationName="ChangeSIMCard_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="25a2292b-512c-45a1-92f9-8f2bec0523f8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ChangeSIMCard/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ChangeSIMCard_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:OldICCID>?</v1:OldICCID>\r
+               <v1:NewICCID>?</v1:NewICCID>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <v1:UserId>?</v1:UserId>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:ChangeSIMCard_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ChangeSIMCard_v1"/></con:call></con:operation><con:operation id="d21c7351-a778-4d11-b9d5-c5d8227407d0" isOneWay="false" action="CoupleSIMCard_v1" name="CoupleSIMCard_v1" bindingOperationName="CoupleSIMCard_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0c185cae-81ec-4fb3-8fa5-32cbbab50776" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/CoupleSIMCard/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:CoupleSIMCard_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:ICCIDPrimary>?</v1:ICCIDPrimary>\r
+               <v1:ICCIDSecondary>?</v1:ICCIDSecondary>\r
+               <v1:ICCID>?</v1:ICCID>\r
+               <v1:MSISDNPrimary>?</v1:MSISDNPrimary>\r
+               <v1:MSISDNSecondary>?</v1:MSISDNSecondary>\r
+               <v1:LineUserName>?</v1:LineUserName>\r
+               <v1:UserId>?</v1:UserId>\r
+               <v1:Operation>?</v1:Operation>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:CoupleSIMCard_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="CoupleSIMCard_v1"/></con:call></con:operation><con:operation id="d5784327-1885-4cf6-8a1c-1e880a562d73" isOneWay="false" action="DecoupleSIMCard_v1" name="DecoupleSIMCard_v1" bindingOperationName="DecoupleSIMCard_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="632044e3-b88b-44ca-a648-8f392ca4f5f6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/DecoupleSIMCard/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:DecoupleSIMCard_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:ICCIDPrimary>?</v1:ICCIDPrimary>\r
+               <v1:ICCIDSecondary>?</v1:ICCIDSecondary>\r
+               <v1:ICCID>?</v1:ICCID>\r
+               <v1:MSISDNPrimary>?</v1:MSISDNPrimary>\r
+               <v1:MSISDNSecondary>?</v1:MSISDNSecondary>\r
+               <v1:UserId>?</v1:UserId>\r
+               <v1:Operation>?</v1:Operation>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:DecoupleSIMCard_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="DecoupleSIMCard_v1"/></con:call></con:operation><con:operation id="9fe3b0ee-f1a8-4861-b12d-65b5a795fa14" isOneWay="false" action="GetCustomerReservedMSISDN_v1" name="GetCustomerReservedMSISDN_v1" bindingOperationName="GetCustomerReservedMSISDN_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e69d830b-dc48-4323-a36d-ee2d15ac2a6c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetCustomerReservedMSISDN/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:GetCustomerReservedMSISDN_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <!--Optional:-->\r
+               <v1:DocumentType>?</v1:DocumentType>\r
+               <!--Optional:-->\r
+               <v1:DocumentId>?</v1:DocumentId>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:GetCustomerReservedMSISDN_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetCustomerReservedMSISDN_v1"/></con:call></con:operation><con:operation id="e095908b-97a3-4850-8f26-6c58bf388d8e" isOneWay="false" action="GetICCIDDetails_v1" name="GetICCIDDetails_v1" bindingOperationName="GetICCIDDetails_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fc15d564-b850-44af-8f95-27dca0786b51" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetICCIDDetails/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:GetICCIDDetails_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:ICCID>?</v1:ICCID>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <v1:UserName>?</v1:UserName>\r
+               <v1:ShopCode>?</v1:ShopCode>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:MSISDNSecondary>?</v1:MSISDNSecondary>\r
+               <v1:CardType>?</v1:CardType>\r
+               <v1:Brand>?</v1:Brand>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:GetICCIDDetails_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetICCIDDetails_v1"/></con:call></con:operation><con:operation id="5f7364cf-e234-484e-a34e-b1dd01fec63b" isOneWay="false" action="GetMSISDNList_v1" name="GetMSISDNList_v1" bindingOperationName="GetMSISDNList_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="865951c7-ae8a-407f-8746-a928fddeb42c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetMSISDNList/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:GetMSISDNList_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <v1:StockType>?</v1:StockType>\r
+               <v1:ShopCode>?</v1:ShopCode>\r
+               <v1:ReservationStatus>?</v1:ReservationStatus>\r
+               <v1:PageStart>?</v1:PageStart>\r
+               <v1:PageRecordCount>?</v1:PageRecordCount>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:GetMSISDNList_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetMSISDNList_v1"/></con:call></con:operation><con:operation id="b6dad3d3-57c7-4157-a361-a1855a3070d8" isOneWay="false" action="GetMSISDNListPendingMNPValidation_v1" name="GetMSISDNListPendingMNPValidation_v1" bindingOperationName="GetMSISDNListPendingMNPValidation_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dbb4fc14-d42d-46b6-97e6-342078671a7c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityInquiries/GetMSISDNListPendingMNPValidation/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:GetMSISDNListPendingMNPValidation_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:Status>?</v1:Status>\r
+               <v1:PageStart>?</v1:PageStart>\r
+               <v1:PageSize>?</v1:PageSize>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:GetMSISDNListPendingMNPValidation_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetMSISDNListPendingMNPValidation_v1"/></con:call></con:operation><con:operation id="2b33fde8-5dfc-411f-9d79-c00a9fa22902" isOneWay="false" action="GetSIMCardList_v1" name="GetSIMCardList_v1" bindingOperationName="GetSIMCardList_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="15554b34-43f8-4707-b25f-6502d8dbfccf" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetSIMCardList/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:GetSIMCardList_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <!--Optional:-->\r
+               <v1:IMSIList>\r
+                  <!--Zero or more repetitions:-->\r
+                  <v1:IMSI>?</v1:IMSI>\r
+               </v1:IMSIList>\r
+               <!--Optional:-->\r
+               <v1:ICCIDList>\r
+                  <!--Zero or more repetitions:-->\r
+                  <v1:ICCID>?</v1:ICCID>\r
+               </v1:ICCIDList>\r
+               <!--Optional:-->\r
+               <v1:MSISDNList>\r
+                  <!--Zero or more repetitions:-->\r
+                  <v1:MSISDN>?</v1:MSISDN>\r
+               </v1:MSISDNList>\r
+               <v1:PageStart>?</v1:PageStart>\r
+               <v1:PageRecordCount>?</v1:PageRecordCount>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:GetSIMCardList_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetSIMCardList_v1"/></con:call></con:operation><con:operation id="1d797160-e3cb-495d-a386-6e6256d4281f" isOneWay="false" action="/Domains/ServiceCatalog/BusinessResources/Processes/Starters/NumberInventoryServices.serviceagent//GetSIMCardSettings_v1" name="GetSIMCardSettings_v1" bindingOperationName="GetSIMCardSettings_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bfddab85-c45d-434b-bace-9bd48baa9d8c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetSIMCardSettings/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:GetSIMCardSettings_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <!--Optional:-->\r
+               <v1:IMSI>?</v1:IMSI>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:GetSIMCardSettings_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="/Domains/ServiceCatalog/BusinessResources/Processes/Starters/NumberInventoryServices.serviceagent//GetSIMCardSettings_v1"/></con:call></con:operation><con:operation id="5c00c26b-1acb-4e71-a05c-66f4ba4427f8" isOneWay="false" action="ManageMSISDN_v1" name="ManageMSISDN_v1" bindingOperationName="ManageMSISDN_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7bd0a54b-3574-47ec-8b32-82770d9b70b5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDN/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ManageMSISDN_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <!--Optional:-->\r
+               <v1:OldMSISDN>?</v1:OldMSISDN>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <!--Optional:-->\r
+               <v1:ICCID>?</v1:ICCID>\r
+               <!--Optional:-->\r
+               <v1:IMSI>?</v1:IMSI>\r
+               <v1:UserId>?</v1:UserId>\r
+               <!--Optional:-->\r
+               <v1:Reason>?</v1:Reason>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:Operation>?</v1:Operation>\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+               <!--Optional:-->\r
+               <v1:DocumentType>?</v1:DocumentType>\r
+               <!--Optional:-->\r
+               <v1:DocumentId>?</v1:DocumentId>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:ManageMSISDN_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ManageMSISDN_v1"/></con:call></con:operation><con:operation id="c50d0c90-d536-4f3b-b8bf-81108601f3ed" isOneWay="false" action="ManageMSISDNLock_v1" name="ManageMSISDNLock_v1" bindingOperationName="ManageMSISDNLock_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fbeee5ae-12ba-4141-89a8-7b0f15f3cc95" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDNLock/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ManageMSISDNLock_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <v1:UserId>?</v1:UserId>\r
+               <v1:LockType>?</v1:LockType>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:ManageMSISDNLock_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ManageMSISDNLock_v1"/></con:call></con:operation><con:operation id="76e2c6ad-86fe-42bf-ae81-39587db6f5af" isOneWay="false" action="ManageSIMCardCouple_v1" name="ManageSIMCardCouple_v1" bindingOperationName="ManageSIMCardCouple_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5394fe28-1f5b-43a9-b911-d29b5f0b18a7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageSIMCardCouple/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ManageSIMCardCouple_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:ICCIDPrimary>?</v1:ICCIDPrimary>\r
+               <v1:ICCIDSecondary>?</v1:ICCIDSecondary>\r
+               <v1:ICCID>?</v1:ICCID>\r
+               <v1:MSISDNPrimary>?</v1:MSISDNPrimary>\r
+               <v1:MSISDNSecondary>?</v1:MSISDNSecondary>\r
+               <v1:LineUserName>?</v1:LineUserName>\r
+               <v1:UserId>?</v1:UserId>\r
+               <v1:Operation>?</v1:Operation>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:ManageSIMCardCouple_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ManageSIMCardCouple_v1"/></con:call></con:operation><con:operation id="fec08b4e-148a-4a08-b08e-6aaba2b8eff4" isOneWay="false" action="ManageSIMCardLock_v1" name="ManageSIMCardLock_v1" bindingOperationName="ManageSIMCardLock_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e8f80f2f-9c5c-4e58-a254-862d899d5a38" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageSIMCardLock/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ManageSIMCardLock_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:ICCID>?</v1:ICCID>\r
+               <v1:UserName>?</v1:UserName>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:LockType>?</v1:LockType>\r
+               <!--Optional:-->\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:ManageSIMCardLock_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ManageSIMCardLock_v1"/></con:call></con:operation><con:operation id="24041636-d5a5-47ea-ab16-ce52e992bc41" isOneWay="false" action="ReleaseMSISDN_v1" name="ReleaseMSISDN_v1" bindingOperationName="ReleaseMSISDN_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f7dac538-59dd-4ead-a1c7-343495603deb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ReleaseMSISDN/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ReleaseMSISDN_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <v1:IMSI>?</v1:IMSI>\r
+               <v1:Reason>?</v1:Reason>\r
+               <v1:UserID>?</v1:UserID>\r
+               <v1:ProcessType>?</v1:ProcessType>\r
+               <v1:IntegrationID>?</v1:IntegrationID>\r
+               <!--Optional:-->\r
+               <v1:DocumentType>?</v1:DocumentType>\r
+               <!--Optional:-->\r
+               <v1:DocumentId>?</v1:DocumentId>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:ReleaseMSISDN_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ReleaseMSISDN_v1"/></con:call></con:operation><con:operation id="f1bf41c0-3022-4e5d-b88c-36e4726c208e" isOneWay="false" action="ReleaseMSISDNListPendingMNPValidation_v1" name="ReleaseMSISDNListPendingMNPValidation_v1" bindingOperationName="ReleaseMSISDNListPendingMNPValidation_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a6523993-9149-44a3-bda4-87244546f911" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/ReleaseMSISDNListPendingMNPValidation/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ReleaseMSISDNListPendingMNPValidation_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <!--Optional:-->\r
+            <v1:Request/>\r
+         </Body>\r
+      </num:ReleaseMSISDNListPendingMNPValidation_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ReleaseMSISDNListPendingMNPValidation_v1"/></con:call></con:operation><con:operation id="8865da02-bef2-43e1-a819-4bd69cc7b7a0" isOneWay="false" action="ReserveMSISDN_v1" name="ReserveMSISDN_v1" bindingOperationName="ReserveMSISDN_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dff606d8-c704-4da0-93d4-ceb622dd6824" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ReserveMSISDN/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:ReserveMSISDN_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <v1:ShopCode>?</v1:ShopCode>\r
+               <v1:Username>?</v1:Username>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:ReserveMSISDN_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="ReserveMSISDN_v1"/></con:call></con:operation><con:operation id="9718b4ee-a0ee-4caf-b7c2-38880c89c5e1" isOneWay="false" action="UpdateMSISDNListPendingMNPValidation_v1" name="UpdateMSISDNListPendingMNPValidation_v1" bindingOperationName="UpdateMSISDNListPendingMNPValidation_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="35b629fd-7c40-40a5-b9c1-9803f2e0bfe6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10097/ServiceCatalog/NumberInventoryServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/PortabilityManagement/UpdateMSISDNListPendingMNPValidation/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <num:UpdateMSISDNListPendingMNPValidation_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>?</head:RequestId>\r
+            <head:SourceSystem>?</head:SourceSystem>\r
+            <head:ReplyExpected>?</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:QoS>?</head:QoS>\r
+            <!--Optional:-->\r
+            <head:Schedule>?</head:Schedule>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>?</head:CorrelationId>\r
+            <!--Optional:-->\r
+            <head:Priority>?</head:Priority>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:ForceSimulate>?</head:ForceSimulate>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <v1:MSISDN>?</v1:MSISDN>\r
+               <v1:Status>?</v1:Status>\r
+               <v1:ErrorDescription>?</v1:ErrorDescription>\r
+            </v1:Request>\r
+         </Body>\r
+      </num:UpdateMSISDNListPendingMNPValidation_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="UpdateMSISDNListPendingMNPValidation_v1"/></con:call></con:operation></con:interface><con:testSuite id="34af7122-2e18-4faf-8d1f-b960a5cc91fc" name="UT_TS_Tibco_NumberInventory_TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="6d941ded-71ef-4a94-a35a-f536d2d50ebb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="UT_TS_Tibco_NumberInventory_TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="NumberInventory_ManageMSISDNLock" id="b9c727f4-d003-4fae-911a-ccd2b4a76762"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>ManageMSISDNLock_v1</con:operation><con:request name="NumberInventory_ManageMSISDNLock" id="9d6bcda6-6c2c-475e-9683-ee4d22e17fd3"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDNLock/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <num:ManageMSISDNLock_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>Siebel</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+            <head:CorrelationId>5427295357</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>3</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SBL</head:ApplicationId>
+               <head:User>VF_GENERIC1</head:User>
+               <!--Optional:-->
+               <head:Password>?</head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem>?</head:ProxySystem>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name>OriginalSourceSystem</head:Name>
+                  <head:Value>Siebel</head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <v1:MSISDN>5427295357</v1:MSISDN>
+               <v1:UserId>mdirlik</v1:UserId>
+               <v1:LockType>LO</v1:LockType>
+               <v1:ProcessType>S</v1:ProcessType>
+               <v1:IntegrationID>1-I3OVJCR</v1:IntegrationID>
+            </v1:Request>
+         </Body>
+      </num:ManageMSISDNLock_v1>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="SOAP Response" id="e175f3ff-c520-49ba-987b-cada95bc9bd0"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="NUmberInventory_GetMSISDNList" id="aa5d2a1a-4409-4540-97c7-01d462bc9b7b"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>GetMSISDNList_v1</con:operation><con:request name="NUmberInventory_GetMSISDNList" id="2828e355-5085-49d5-bd0c-2bb885459256"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetMSISDNList/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <num:GetMSISDNList_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>SIEBEL</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+            <head:CorrelationId>Req12345</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>1</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SBL</head:ApplicationId>
+               <head:User>SIEBEL</head:User>
+               <!--Optional:-->
+               <head:Password>?</head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem>?</head:ProxySystem>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name>?</head:Name>
+                  <head:Value>?</head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <v1:MSISDN>54690008</v1:MSISDN>
+               <v1:StockType>N</v1:StockType>
+               <v1:ShopCode>S323000</v1:ShopCode>
+               <v1:ReservationStatus>A</v1:ReservationStatus>
+               <v1:PageStart>0</v1:PageStart>
+               <v1:PageRecordCount>10</v1:PageRecordCount>
+            </v1:Request>
+         </Body>
+      </num:GetMSISDNList_v1>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="SOAP Response" id="84f68969-5495-42c3-bd4b-0b49bea891c4"/><con:assertion type="Response SLA Assertion" id="f5c218de-6513-47b6-82ef-f760435758a4" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="NumberInventory_GetSIMCardSetting" id="e60a9d80-85ea-4bc4-96f8-40cee619dee6"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>GetSIMCardSettings_v1</con:operation><con:request name="NumberInventory_GetSIMCardSetting" id="7f93c72d-f1be-4451-ad1e-7927a626ba00"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetSIMCardSettings/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <num:GetSIMCardSettings_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>SDF</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+            <head:CorrelationId>SDF_123456</head:CorrelationId>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SDF</head:ApplicationId>
+               <head:User>SDF</head:User>
+               <!--Optional:-->
+               <head:Password>?</head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem>?</head:ProxySystem>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name>TIMEOUT</head:Name>
+                  <head:Value>39041</head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <!--Optional:-->
+               <v1:IMSI>286025426101631</v1:IMSI>
+            </v1:Request>
+         </Body>
+      </num:GetSIMCardSettings_v1>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="SOAP Response" id="12980bd2-eeca-4f55-a52a-a438db33e175"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="Property" id="f3995bd2-89bc-46be-889a-7453b31501ed"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Endpoint</con:name><con:value>http://172.31.70.139:10048/ServiceCatalog/NumberInventoryServices</con:value></con:property><con:property><con:name>RequestID</con:name><con:value>Rahul9876654</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="NumberInventory_GetICCIDDetails_v1" id="b7718efb-2287-42d5-bbbd-00b4a4f3bd08"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>GetICCIDDetails_v1</con:operation><con:request name="NumberInventory_GetICCIDDetails_v1" id="fa0ab044-0405-4fd7-8bdc-3629259f8030"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/GetICCIDDetails/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <num:GetICCIDDetails_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>SIEBEL</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+            <head:CorrelationId>3423095-1564731856147</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>1</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>OSM</head:ApplicationId>
+               <head:User>SOEI_USER</head:User>
+               <!--Optional:-->
+               <head:Password>?</head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem>OSM</head:ProxySystem>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name>Id</head:Name>
+                  <head:Value>3423095-1564731856147</head:Value>
+               </head:Attribute>
+                              <head:Attribute>
+                  <head:Name>Name</head:Name>
+                  <head:Value>ProvisioningManagement.PRF.CreateOrder</head:Value>
+               </head:Attribute>
+               <head:Attribute>
+                  <head:Name>Scenario</head:Name>
+                  <head:Value>ProvisioningManagement.PRF.CreateOrder.Service.Mobile.ModifyOptions.Service.Mobile.ModifyOptions.BaseCBU.CreateOrder</head:Value>
+               </head:Attribute>
+               <head:Attribute>
+                  <head:Name>OrderId</head:Name>
+                  <head:Value>3423095</head:Value>
+               </head:Attribute>
+               <head:Attribute>
+                  <head:Name>CartridgeName</head:Name>
+                  <head:Value>TELCO_VFTR_SOLUTION</head:Value>
+               </head:Attribute>
+               <head:Attribute>
+                  <head:Name>Version</head:Name>
+                  <head:Value>2.0.0.0.1</head:Value>
+               </head:Attribute>
+  <head:Attribute>
+                  <head:Name>Source</head:Name>
+                  <head:Value>Siebel</head:Value>
+               </head:Attribute>
+                 <head:Attribute>
+                  <head:Name>CorrelationID</head:Name>
+                  <head:Value>3423095-1564731856147#0</head:Value>
+               </head:Attribute>
+                         <head:Attribute>
+                  <head:Name>MasterOrderId</head:Name>
+                  <head:Value>3423095</head:Value>
+               </head:Attribute>
+                         <head:Attribute>
+                  <head:Name>ResponseService</head:Name>
+                  <head:Value>ProvisioningManagement/PRF/ProvisioningResponse_v1/ProvisioningResponse.process</head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <v1:ICCID>899002708467310803</v1:ICCID>
+               <v1:MSISDN>5467510803</v1:MSISDN>
+               <v1:UserName>SOEI_USER</v1:UserName>
+               <v1:ShopCode>?</v1:ShopCode>
+               <v1:ProcessType>T</v1:ProcessType>
+               <v1:MSISDNSecondary>?</v1:MSISDNSecondary>
+               <v1:CardType>NO</v1:CardType>
+               <v1:Brand>PO</v1:Brand>
+            </v1:Request>
+         </Body>
+      </num:GetICCIDDetails_v1>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="SOAP Response" id="b61b68e7-8889-43a9-ad66-45c2202a65a6"/><con:assertion type="Schema Compliance" id="edd963ce-7662-416a-a64c-2e0f3bc12580"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="61c4d266-3201-4118-9e45-08143b4ea015"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="NumberInventory_ManageMSISDN_v1" id="82019c9e-aeda-4587-bee5-bb429f3ec390"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>ManageMSISDN_v1</con:operation><con:request name="NumberInventory_ManageMSISDN_v1" id="caf4328d-60b5-4c2d-83bc-6e1fec0ae18d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageMSISDN/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <num:ManageMSISDN_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>SIEBEL</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+<!--            <head:Schedule></head:Schedule> -->
+            <!--Optional:-->
+            <head:CorrelationId>1234589</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>1</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId></head:ApplicationId>
+               <head:User></head:User>
+               <!--Optional:-->
+               <head:Password></head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem></head:ProxySystem>
+            <!--Optional:-->
+            <head:ForceSimulate>0</head:ForceSimulate>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name></head:Name>
+                  <head:Value></head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <!--Optional:-->
+               <v1:OldMSISDN>5467017876</v1:OldMSISDN>
+               <v1:MSISDN>5467017876</v1:MSISDN>
+               <!--Optional:-->
+               <v1:ICCID>899002708467017876</v1:ICCID>
+               <!--Optional:-->
+               <v1:IMSI>286027067017876</v1:IMSI>
+               <v1:UserId>mdirlik</v1:UserId>
+               <!--Optional:-->
+               <v1:Reason></v1:Reason>
+               <v1:ProcessType>S</v1:ProcessType>
+               <v1:Operation>Activate</v1:Operation>
+               <v1:IntegrationID></v1:IntegrationID>
+               <!--Optional:-->
+               <v1:DocumentType>TAX ID</v1:DocumentType>
+               <!--Optional:-->
+               <v1:DocumentId>NA</v1:DocumentId>
+            </v1:Request>
+         </Body>
+      </num:ManageMSISDN_v1>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="SOAP Response" id="b778a465-f42a-4582-8189-ca33ccdad1bb"/><con:assertion type="Schema Compliance" id="4414cfe0-9429-46c1-891f-8d89a56b94c8"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="c23c29fe-cfcc-432c-9bab-ea1cb3ffe6d9"/><con:assertion type="Response SLA Assertion" id="0bf4e535-52d7-4b6c-a788-789c433be849" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="faff896a-bc4e-406d-ab63-5c79a779febd"><con:settings/><con:config><script>def name = context.expand ('${Property#RequestID}')
+log.info  ( 'Property is  :    '+name );
+</script></con:config></con:testStep><con:testStep type="groovy" name="GetSetProperties" id="baf96b65-cafc-4b3d-a578-3eaadaef5fa2"><con:settings/><con:config><script>def request = testRunner.testCase.getPropertyValue('RequestID')
+
+
+/////testRunner.testCase.setPropertyValue('RequestID' ,'Value')
+log.info  ( 'Property is  :    '+request );</script></con:config></con:testStep><con:properties><con:property><con:name>RequestID</con:name><con:value>Rahul987654</con:value></con:property><con:property><con:name>Endpoint</con:name><con:value>http://172.31.70.139:10048/ServiceCatalog/NumberInventoryServices</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

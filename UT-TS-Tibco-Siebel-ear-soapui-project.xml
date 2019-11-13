@@ -54651,7 +54651,44 @@
          </Body>\r
       </sieb:GetCustomerScoreData_v1>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetCustomerScoreData_v1"/></con:call></con:operation><con:operation id="369fd9e3-293d-4de8-a61f-3c79ee7ac837" isOneWay="false" action="GetDataSharingMainLine_v1" name="GetDataSharingMainLine_v1" bindingOperationName="GetDataSharingMainLine_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ce7906f9-59aa-465a-876f-60d5f747acff" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10016/ServiceCatalog/SiebelServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sieb="http://vodafone.com.tr/ServiceCatalog/Business/SiebelServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetDataSharingMainLine/v1">\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetCustomerScoreData_v1"/></con:call><con:call id="b97e6945-ec4d-44af-81d9-b10856cfec02" name="Copy of Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.31.70.229:10037/ServiceCatalog/SiebelServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sieb="http://vodafone.com.tr/ServiceCatalog/Business/SiebelServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/CustomerScoring/GetCustomerScoreData/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sieb:GetCustomerScoreData_v1>\r
+         <Header>\r
+            <!--Optional:-->\r
+            <head:RequestId>Rahul987765</head:RequestId>\r
+            <head:SourceSystem>Siebel</head:SourceSystem>\r
+            <head:ReplyExpected>Now</head:ReplyExpected>\r
+            <!--Optional:-->\r
+            <head:CorrelationId>Rahul987765</head:CorrelationId>\r
+            <!--1 or more repetitions:-->\r
+            <head:Credentials>\r
+               <head:ApplicationId>?</head:ApplicationId>\r
+               <head:User>?</head:User>\r
+               <!--Optional:-->\r
+               <head:Password>?</head:Password>\r
+            </head:Credentials>\r
+            <!--Optional:-->\r
+            <head:ProxySystem>?</head:ProxySystem>\r
+            <!--Optional:-->\r
+            <head:Attributes>\r
+               <!--Zero or more repetitions:-->\r
+               <head:Attribute>\r
+                  <head:Name>?</head:Name>\r
+                  <head:Value>?</head:Value>\r
+               </head:Attribute>\r
+            </head:Attributes>\r
+         </Header>\r
+         <Body>\r
+            <v1:Request>\r
+               <!--Optional:-->\r
+               <v1:TCID>74405685582</v1:TCID>\r
+            </v1:Request>\r
+         </Body>\r
+      </sieb:GetCustomerScoreData_v1>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetCustomerScoreData_v1"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="369fd9e3-293d-4de8-a61f-3c79ee7ac837" isOneWay="false" action="GetDataSharingMainLine_v1" name="GetDataSharingMainLine_v1" bindingOperationName="GetDataSharingMainLine_v1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ce7906f9-59aa-465a-876f-60d5f747acff" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10016/ServiceCatalog/SiebelServices</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sieb="http://vodafone.com.tr/ServiceCatalog/Business/SiebelServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetDataSharingMainLine/v1">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <sieb:GetDataSharingMainLine_v1>\r
@@ -59856,4 +59893,130 @@
    </soapenv:Body>
 
 </soapenv:Envelope>
-]]></con:request><con:assertion type="SOAP Response" id="854f6e72-1822-470d-9f4c-b02be1b0dc6a"/><con:assertion type="Schema Compliance" id="674b2244-a238-48bc-90a6-2cceb38c4bea"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="e9cabd83-d0ec-4549-92d8-e4b2a26f63a5"/><con:assertion type="Response SLA Assertion" id="0c1acb65-1129-4a50-860c-f56886e4ae04" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+]]></con:request><con:assertion type="SOAP Response" id="854f6e72-1822-470d-9f4c-b02be1b0dc6a"/><con:assertion type="Schema Compliance" id="674b2244-a238-48bc-90a6-2cceb38c4bea"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="e9cabd83-d0ec-4549-92d8-e4b2a26f63a5"/><con:assertion type="Response SLA Assertion" id="0c1acb65-1129-4a50-860c-f56886e4ae04" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Siebel_GetActiveAgreements_v1" id="62b7d9a3-155a-4f26-b4a0-157159fad7f8"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPSBindingBinding</con:interface><con:operation>GetActiveAgreements_v1</con:operation><con:request name="Siebel_GetActiveAgreements_v1" id="a22438c7-2ea5-4958-bf6d-e8ed9298fdb1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sieb="http://vodafone.com.tr/ServiceCatalog/Business/SiebelServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetActiveAgreements/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sieb:GetActiveAgreements_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>mcare</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <head:CorrelationId></head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>1</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SDF</head:ApplicationId>
+               <head:User>SDF</head:User>
+            </head:Credentials>
+            <head:ForceSimulate>0</head:ForceSimulate>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name></head:Name>
+                  <head:Value></head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <v1:MSISDN>5461001051</v1:MSISDN>
+            </v1:Request>
+         </Body>
+      </sieb:GetActiveAgreements_v1>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="900e13e0-794c-4eb2-841a-d5a7cf75dd3d"/><con:assertion type="Schema Compliance" id="3d8a9233-f5a5-462d-a63d-5f236848dcb7"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="7898defd-f72e-42e0-9f42-1d7557932f24"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Siebel_GetCBUSubscribers_v1" id="2bffff10-b8ff-421f-ad21-275729454f08"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPSBindingBinding</con:interface><con:operation>GetCBUSubscribers_v1</con:operation><con:request name="Siebel_GetCBUSubscribers_v1" id="e055657f-9849-41aa-88e4-5b2f796a06fb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://vodafone.com.tr/ServiceCatalog/Business/SiebelServices/GetCBUSubscribers" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCBUSubscribers/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:GetCBUSubscribers_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>SIEBEL</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+       <!--      <head:Schedule>?</head:Schedule>
+l:-->
+            <!--Optional:-->
+            <head:CorrelationId>REQ1212</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>1</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>REQ1212</head:ApplicationId>
+            <head:User></head:User>
+            </head:Credentials>
+            <!--Optional:-->
+       
+            <head:ForceSimulate>0</head:ForceSimulate>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+          
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <v1:TCKN>63765966356</v1:TCKN>
+            </v1:Request>
+         </Body>
+      </get:GetCBUSubscribers_v1>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="1e601ef4-b52d-4ae3-94e4-30406e16aef9"/><con:assertion type="Schema Compliance" id="8dc58454-fe66-4c7e-a2a0-62bcff9c0650"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="a38b6959-f935-416c-8d34-d9bdfb22e07a"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Siebel_GetCustomerDetails_v1" id="00982968-22ca-40b1-8ab7-20f55bb454e4"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPSBindingBinding</con:interface><con:operation>GetCustomerDetails_v1</con:operation><con:request name="Siebel_GetCustomerDetails_v1" id="251a9bdc-889f-4ff6-b086-a9dfbcb25074"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:get="http://vodafone.com.tr/ServiceCatalog/Business/SiebelServices/GetCustomerDetails" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/CustomerInquiries/GetCustomerDetails/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <get:GetCustomerDetails_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>SIEBEL</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+        <!--    <head:Schedule>?</head:Schedule> :-->
+            <!--Optional:-->
+            <head:CorrelationId>1234594</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>1</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SIEBEL</head:ApplicationId>
+               <head:User>SIEBEL</head:User>
+               <!--Optional:-->
+               <head:Password></head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem></head:ProxySystem>
+            <!--Optional:-->
+            <head:ForceSimulate>false</head:ForceSimulate>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name>SIEBEL</head:Name>
+                  <head:Value>SIEBEL</head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <!--Optional:-->
+               <v1:BillingAccountCode>5430716929</v1:BillingAccountCode>
+               <!--Optional:-->
+               <v1:CustomerCode>00013440445</v1:CustomerCode>
+               <!--Optional:-->
+               <v1:MSISDN>5467018452</v1:MSISDN>
+               <!--Optional:-->
+               <v1:TaxID></v1:TaxID>
+            </v1:Request>
+         </Body>
+      </get:GetCustomerDetails_v1>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="96a21987-34f5-48ec-b0c1-4ea2d25c4ec5"/><con:assertion type="Schema Compliance" id="5a57e87f-36db-4338-86dd-1b6441f78a3b"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="f064eee4-4738-4fb5-ad7b-8210befad70d"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

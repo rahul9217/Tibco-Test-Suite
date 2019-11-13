@@ -19005,4 +19005,295 @@
       </bil:GetSVBConsumptions_v1>
    </soapenv:Body>
 </soapenv:Envelope>
-]]></con:request><con:assertion type="SOAP Response" id="d207a9d3-fa59-4e8c-81f9-bb6312784e11"/><con:assertion type="Schema Compliance" id="6758a3ac-4d9c-4213-82a5-83c9369edb59"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0d44ebe4-547c-4f75-b07a-9969e7d81b6f"/><con:assertion type="Response SLA Assertion" id="859d3735-0d27-4702-b72b-774891672062" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+]]></con:request><con:assertion type="SOAP Response" id="d207a9d3-fa59-4e8c-81f9-bb6312784e11"/><con:assertion type="Schema Compliance" id="6758a3ac-4d9c-4213-82a5-83c9369edb59"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0d44ebe4-547c-4f75-b07a-9969e7d81b6f"/><con:assertion type="Response SLA Assertion" id="859d3735-0d27-4702-b72b-774891672062" name="Response SLA"><con:configuration><SLA>2000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="BillingAdapter_GetCDRList_v1" id="ad99d4df-446c-4541-8f0b-ad205771b11a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>GetCDRList_v1</con:operation><con:request name="BillingAdapter_GetCDRList_v1" id="d5b5cc7e-d7c3-4dab-bcbf-afb9395b8db0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bil="http://vodafone.com.tr/ServiceCatalog/Business/BillingAdapterServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/AccountInquiries/GetCDRList/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bil:GetCDRList_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>mcare</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+        <!--    <head:Schedule>?</head:Schedule> :-->
+            <!--Optional:-->
+            <head:CorrelationId></head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>1</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SDF</head:ApplicationId>
+               <head:User>SDF</head:User>
+               <!--Optional:-->
+               <head:Password></head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem></head:ProxySystem>
+            <!--Optional:-->
+            <head:ForceSimulate>false</head:ForceSimulate>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name></head:Name>
+                  <head:Value></head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <!--Optional:-->
+               <v1:TrafficType></v1:TrafficType>
+               <!--Optional:-->
+               <v1:BundleId></v1:BundleId>
+               <!--Optional:-->
+         <!--      <v1:PeriodStartDate></v1:PeriodStartDate>:-->
+               <!--Optional:-->
+           <!--    <v1:PeriodEndDate></v1:PeriodEndDate>:-->
+               <!--Optional:-->
+               <v1:CalledNumber></v1:CalledNumber>
+               <!--Optional:-->
+               <v1:CallingNumber></v1:CallingNumber>
+               <!--Optional:-->
+               <v1:MSISDN></v1:MSISDN>
+               <!--Optional:-->
+               <v1:BillAccountCode></v1:BillAccountCode>
+               <!--Optional:-->
+               <v1:InvoiceID>FC90650Z000374</v1:InvoiceID>
+               <v1:RowRangeFrom>0</v1:RowRangeFrom>
+               <v1:RowRangeTo>999999</v1:RowRangeTo>
+               <!--Optional:-->
+               <v1:CDRSourceCode></v1:CDRSourceCode>
+               <!--Optional:-->
+          <!--     <v1:MinAmount></v1:MinAmount>:-->
+               <!--Optional:-->
+          <!--     <v1:MaxAmount></v1:MaxAmount>:-->
+               <!--Optional:-->
+          <!--     <v1:MinDiscountAmount></v1:MinDiscountAmount>:-->
+               <!--Optional:-->
+          <!--     <v1:MaxDiscountAmount></v1:MaxDiscountAmount>:-->
+               <!--Optional:-->
+               <v1:MinDuration></v1:MinDuration>
+               <!--Optional:-->
+               <v1:MaxDuration></v1:MaxDuration>
+               <!--Optional:-->
+               <v1:CalledOperator></v1:CalledOperator>
+               <!--Optional:-->
+               <v1:SortedBy></v1:SortedBy>
+               <!--Optional:-->
+               <v1:Region></v1:Region>
+               <!--Optional:-->
+               <v1:InternetUsageType></v1:InternetUsageType>
+               <!--Optional:-->
+      <!--         <v1:LocateAtDate></v1:LocateAtDate>l:-->
+               <!--Optional:-->
+       <!--        <v1:HideZeroAmount></v1:HideZeroAmount>l:-->
+               <!--Optional:-->
+               <v1:CallType></v1:CallType>
+            </v1:Request>
+         </Body>
+      </bil:GetCDRList_v1>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="ccb7c09a-944b-47e0-8245-305d56d088c3"/><con:assertion type="Schema Compliance" id="0c63da60-a4af-4bb3-b593-92400b54785c"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="c812b982-2bd0-4123-b2e4-136eea28372b"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="BillingAdapter_GetCostControlBundleUsage_v1" id="406760b1-7336-4e9b-a4da-c2d7d58b0f46"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>GetCostControlBundleUsage_v1</con:operation><con:request name="BillingAdapter_GetCostControlBundleUsage_v1" id="4872c014-4c4a-4b7f-a04b-9b62be52d0d7"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bil="http://vodafone.com.tr/ServiceCatalog/Business/BillingAdapterServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/SubscriberInquiries/GetCostControlBundleUsage/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bil:GetCostControlBundleUsage_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>SIEBEL</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+          <!--Optional:-->
+        <!--      <head:Schedule></head:Schedule>:-->
+            <!--Optional:-->
+            <head:CorrelationId>1-I3ADH00</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>1</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SBL</head:ApplicationId>
+               <head:User>USR_RSP101</head:User>
+               <!--Optional:-->
+               <head:Password></head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem></head:ProxySystem>
+            <!--Optional:-->
+            <head:ForceSimulate>false</head:ForceSimulate>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name>OriginalSourceSystem</head:Name>
+                  <head:Value>Siebel</head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <!--Optional:-->
+               <v1:BillingAccount></v1:BillingAccount>
+               <!--Optional:-->
+               <v1:MSISDN>5461010210</v1:MSISDN>
+               <!--Optional:-->
+               <v1:BundleId></v1:BundleId>
+               <!--Optional:-->
+               <v1:BundlePeriod></v1:BundlePeriod>
+               <!--Optional:-->
+               <v1:ContractTrackingId></v1:ContractTrackingId>
+               <!--Optional:-->
+               <v1:ContractTrackingIdServ></v1:ContractTrackingIdServ>
+               <!--Optional:-->
+               <v1:ListOfAttributes>
+                  <!--Zero or more repetitions:-->
+                  <v1:Attribute>
+                     <!--Optional:-->
+                     <v1:Name></v1:Name>
+                     <!--Optional:-->
+                     <v1:Value></v1:Value>
+                  </v1:Attribute>
+               </v1:ListOfAttributes>
+            </v1:Request>
+         </Body>
+      </bil:GetCostControlBundleUsage_v1>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b4ff7077-7edc-4cf5-a701-7fe1aa9ec981"/><con:assertion type="Schema Compliance" id="7643e64f-5fcd-4e81-b53c-f40ba0da4b75"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="3f12fd36-e99b-4a4a-b917-bfa13105feca"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="BillingAdpater_GetReportStatus_v1" id="a67aca28-c8b3-40ad-806a-95b63567ad66"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>GetReportStatus_v1</con:operation><con:request name="BillingAdpater_GetReportStatus_v1" id="be2fd4fe-f5ba-48c2-9627-8b2443eccb82"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bil="http://vodafone.com.tr/ServiceCatalog/Business/BillingAdapterServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/AccountInquiries/GetReportStatus/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bil:GetReportStatus_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>SIEBEL</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+          <!--  <head:Schedule>?</head:Schedule>  :-->
+            <!--Optional:-->
+            <head:CorrelationId>1-I3S0M3NY</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>3</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SBL</head:ApplicationId>
+               <head:User>USR_RSP101</head:User>
+               <!--Optional:-->
+               <head:Password></head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem>1</head:ProxySystem>
+            <!--Optional:-->
+            <head:ForceSimulate>0</head:ForceSimulate>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name>OriginalSourceSystem</head:Name>
+                  <head:Value>Siebel</head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <v1:CustomerCode>USR_RSP101</v1:CustomerCode>
+               <v1:BillingAccount>USR_RSP101</v1:BillingAccount>
+               <v1:MSISDN>USR_RSP101</v1:MSISDN>
+               <!--Optional:-->
+               <v1:ReportType>0</v1:ReportType>
+               <!--Optional:-->
+            <!--    <v1:RequestStatus></v1:RequestStatus> :-->
+               <!--Optional:-->
+               <v1:Filename></v1:Filename>
+            </v1:Request>
+         </Body>
+      </bil:GetReportStatus_v1>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="d848fbde-b138-48be-8595-3a17d1c0ae77"/><con:assertion type="Schema Compliance" id="ac087794-0f36-41a7-b182-cb50a1d3487a"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="05dbfab9-2850-4942-9a6a-ebef682f22b4"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="BillingAdapter_ModifyAccountGeneralData_v1" id="bc683477-b040-4f14-af9a-c1b196e4d785"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>ModifyAccountGeneralData_v1</con:operation><con:request name="BillingAdapter_ModifyAccountGeneralData_v1" id="406920d4-4772-4bfd-9592-7629fff1db7c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bil="http://vodafone.com.tr/ServiceCatalog/Business/BillingAdapterServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/AccountManagement/ModifyAccountGeneralData/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bil:ModifyAccountGeneralData_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>SIEBEL</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+         <!--    <head:Schedule></head:Schedule> :-->
+            <!--Optional:-->
+            <head:CorrelationId>1-I3GCQPE</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>3</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SBL</head:ApplicationId>
+               <head:User>SADMIN</head:User>
+               <!--Optional:-->
+               <head:Password></head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem></head:ProxySystem>
+            <!--Optional:-->
+            <head:ForceSimulate>false</head:ForceSimulate>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name>OriginalSourceSystem</head:Name>
+                  <head:Value>Siebel</head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <!--Optional:-->
+               <v1:ExternalId></v1:ExternalId>
+               <!--Optional:-->
+               <v1:ExternalComponentId></v1:ExternalComponentId>
+               <v1:BillingAccount>
+                  <!--Optional:-->
+                  <v1:AccountData>
+                     <v1:Attributes>
+                        <v1:DunningExemptFlag>N</v1:DunningExemptFlag>
+                        <v1:FraudFlag>N</v1:FraudFlag>
+                        <v1:InvIssueSkipFlag>N</v1:InvIssueSkipFlag>
+                     </v1:Attributes>
+                     <!--Optional:-->
+                     <v1:AccountCategory>
+                        <v1:Segment>ACC_CLASS_CON_REGULAR</v1:Segment>
+                        <v1:Subclass>415</v1:Subclass>
+                     </v1:AccountCategory>
+                     <v1:BillingFranchiseTaxCode>111</v1:BillingFranchiseTaxCode>
+                     <!--Optional:-->
+                     <v1:CreditClass>101</v1:CreditClass>
+                     <!--Optional:-->
+                     <v1:CreditLimit>0</v1:CreditLimit>
+                     <v1:CurrencyCode>TRY</v1:CurrencyCode>
+                     <v1:DisconnectReason>100</v1:DisconnectReason>
+                     <v1:LanguageCode>TRK</v1:LanguageCode>
+                     <v1:MarketCode>100</v1:MarketCode>
+                     <v1:VipCode>111</v1:VipCode>
+                  </v1:AccountData>
+                  <v1:ListAccounts>
+                     <!--1 or more repetitions:-->
+                     <v1:AccountId>
+                        <v1:ExternalId>6602703516</v1:ExternalId>
+                     </v1:AccountId>
+                  </v1:ListAccounts>
+                  <v1:CustomerId>
+                     <v1:ExternalId>00013440455</v1:ExternalId>
+                  </v1:CustomerId>
+                  <v1:EffectiveDate>2019-08-09T15:54:24+03:00</v1:EffectiveDate>
+               </v1:BillingAccount>
+            </v1:Request>
+         </Body>
+      </bil:ModifyAccountGeneralData_v1>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="SOAP Response" id="6411c02a-c9e7-4b83-9891-fc2a63bcde63"/><con:assertion type="Schema Compliance" id="075c9bd1-6bdd-43bc-b492-f00482bc7fcc"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="e2b8ba40-b535-40fa-a4e5-b1c8fc13b630"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

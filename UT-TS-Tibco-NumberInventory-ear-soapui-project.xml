@@ -2519,4 +2519,54 @@ log.info  ( 'Property is  :    '+name );
 
 
 /////testRunner.testCase.setPropertyValue('RequestID' ,'Value')
-log.info  ( 'Property is  :    '+request );</script></con:config></con:testStep><con:properties><con:property><con:name>RequestID</con:name><con:value>Rahul987654</con:value></con:property><con:property><con:name>Endpoint</con:name><con:value>http://172.31.70.139:10048/ServiceCatalog/NumberInventoryServices</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+log.info  ( 'Property is  :    '+request );</script></con:config></con:testStep><con:testStep type="request" name="NumerInventory_ManageSIMCardLock_v1" id="a9ff662f-a46b-4f3c-b876-17c3079436e2"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HTTPBinding</con:interface><con:operation>ManageSIMCardLock_v1</con:operation><con:request name="NumerInventory_ManageSIMCardLock_v1" id="d2c7d42e-ca4a-4f34-9707-3e1c3241d14e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${Property#Endpoint}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:num="http://vodafone.com.tr/ServiceCatalog/Business/NumberInventoryServices" xmlns:head="http://vodafone.com.tr/EAI/Common/Header" xmlns:v1="http://vodafone.com.tr/ServiceCatalog/Business/InventoryManagement/ManageSIMCardLock/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <num:ManageSIMCardLock_v1>
+         <Header>
+            <!--Optional:-->
+            <head:RequestId>${Property#RequestID}</head:RequestId>
+            <head:SourceSystem>Siebel</head:SourceSystem>
+            <head:ReplyExpected>Now</head:ReplyExpected>
+            <!--Optional:-->
+            <head:QoS>R</head:QoS>
+            <!--Optional:-->
+          <!--  <head:Schedule>?</head:Schedule> :-->
+            <!--Optional:-->
+            <head:CorrelationId>899002708467016993</head:CorrelationId>
+            <!--Optional:-->
+            <head:Priority>1</head:Priority>
+            <!--1 or more repetitions:-->
+            <head:Credentials>
+               <head:ApplicationId>SBL</head:ApplicationId>
+               <head:User>CBU_083</head:User>
+               <!--Optional:-->
+               <head:Password></head:Password>
+            </head:Credentials>
+            <!--Optional:-->
+            <head:ProxySystem></head:ProxySystem>
+            <!--Optional:-->
+            <head:ForceSimulate>false</head:ForceSimulate>
+            <!--Optional:-->
+            <head:Attributes>
+               <!--Zero or more repetitions:-->
+               <head:Attribute>
+                  <head:Name>OriginalSourceSystem</head:Name>
+                  <head:Value>Siebel</head:Value>
+               </head:Attribute>
+            </head:Attributes>
+         </Header>
+         <Body>
+            <v1:Request>
+               <v1:ICCID>899002708467016993</v1:ICCID>
+               <v1:UserName>mdirlik</v1:UserName>
+               <v1:ProcessType>S</v1:ProcessType>
+               <v1:LockType>LO</v1:LockType>
+               <!--Optional:-->
+               <v1:IntegrationID>?</v1:IntegrationID>
+            </v1:Request>
+         </Body>
+      </num:ManageSIMCardLock_v1>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="SOAP Response" id="6a150524-3d77-4136-9503-051631e0669f"/><con:assertion type="Schema Compliance" id="7dc5fb8a-72b2-4aa4-848f-d8a02712b31e"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="79491072-6076-4bb8-8827-8dde8e87da3b"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>RequestID</con:name><con:value>Rahul987654</con:value></con:property><con:property><con:name>Endpoint</con:name><con:value>http://172.31.70.139:10048/ServiceCatalog/NumberInventoryServices</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
